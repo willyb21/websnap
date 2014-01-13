@@ -1,4 +1,4 @@
-/*global websnap, $*/
+/*global websnap$*/
 
 
 window.websnap = {
@@ -14,5 +14,13 @@ window.websnap = {
 
 $(document).ready(function () {
     'use strict';
+
     websnap.init();
+
+    var AppRouter = new websnap.Routers.AppRouter();
+    Backbone.history.start();
+
+//    $("a").click(function(e) {
+//        e.preventDefault();
+//    });
 });

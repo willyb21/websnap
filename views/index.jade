@@ -1,5 +1,29 @@
-extends layout
+div.page-header
+    h1 Welcome to Websnap
+    p.lead This is a web client for the populair app 'Snapchat'
 
-block content
-  h1= title
-  p Welcome to #{title}
+h2.form-signin-heading Login
+    p.lead When you are logged in, the action menu will appear
+
+div#signInForm
+    input#username(style="width:110px" type="text" placeholder="Username").form-control
+    input#password(style="width:110px" type="password" placeholder="Password" required).form-control
+
+    button(type="submit" style="margin-top:15px;width:100px").btn.btn-lg.btn-primary.btn-block.signInBtn Sign in
+
+div(style="display:none")#information
+
+    h3 My Info
+
+    ul
+        li
+            p Username:
+                span.username
+            p
+
+
+    h3 Friends
+
+    ul#friends
+
+
